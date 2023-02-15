@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(260deg, hsl(216, 58%, 10%), hsl(215, 53%, 14%));
+  background-size: 100%;
+  animation: gradient-animation 3s ease infinite;
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  position: relative;
+  margin-top: 10vh;
+  background-color: hsl(216, 50%, 16%);
+  width: 18.75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.875rem 1.875rem 3rem;
+  border-radius: 0.9375rem;
+  box-shadow: 5px 50px 50px 20px rgba(0, 0, 0, 0.281);
+}
+
+.equil-img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image {
+  position: relative;
+  background: none;
+}
+.overlay {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 99%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  background-color: hsla(178, 100%, 50%, 0.404);
+}
+
+.image:hover .overlay {
+  opacity: 1;
+}
+
+.icon-view {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.item-heading {
+  color: hsl(0, 0%, 100%);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.74);
+}
+.item-heading:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.2s ease-out;
+  cursor: default;
+}
+
+.item-description {
+  color: hsl(215, 51%, 70%);
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+.price {
+  position: relative;
+  color: hsl(178, 100%, 50%);
+  font-weight: 700;
+  bottom: 3px;
+}
+
+.time-left {
+  position: relative;
+  color: hsl(215, 51%, 70%);
+  bottom: 3px;
+  font-size: 0.9rem;
+}
+
+.clocks {
+  right: 75px;
+}
+
+.line {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.253);
+  margin: 20px 0 10px;
+}
+
+.avatar-img {
+  position: relative;
+  bottom: -5px;
+  width: 30px;
+  margin-bottom: 10px;
+  align-items: center;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+}
+
+.created-by {
+  position: relative;
+  bottom: 15px;
+  color: hsl(215, 51%, 70%);
+  margin-left: 10px;
+  align-items: center;
+}
+
+.name-by {
+  color: hsl(0, 0%, 100%);
+  margin-left: 2px;
+}
+
+.name-by:hover {
+  color: hsl(178, 100%, 50%);
+  transition: 0.2s ease-out;
+  cursor: default;
+}
+
+.time-div {
+  float: right;
+}
+
+@media (max-width: 400px) {
+  section {
+    max-width: 100%;
+  }
+}
